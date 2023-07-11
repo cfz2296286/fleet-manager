@@ -1,8 +1,16 @@
-//import axios from 'axios'
+import axios from 'axios'
 import qs from 'qs'
 import { message } from 'ant-design-vue'
 
-
+const request = axios.create({
+  baseURL: '',
+  timeout: 10 * 1000,
+  paramsSerializer: function (params) {
+    return qs.stringify(params, {
+      arrayFormat: 'indices'
+    })
+  }
+})
 
 function getCookie(name) {
   var r = document.cookie.match("\\b" + name + "=([^;]*)\\b");
