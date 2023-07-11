@@ -1,0 +1,71 @@
+:root{
+  --bgColor: #f3f3f3;
+  --bgColor2: #e3e3e3;
+  --bgColor3: #d3d3d3;
+  --pColor: #27a43a;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+/* 为所有具有滚动条的元素自定义滚动条样式 */
+html {
+  scrollbar-width: thin; /* 设置滚动条宽度为较窄的宽度 */
+  scrollbar-color: #888 #f1f1f1; /* 设置滚动条滑块颜色和轨道颜色 */
+}
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+body{
+  background-color: var(--bgColor);
+}
+.shadow{
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+}
+
+.page-wrap {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 12px;
+  overflow: auto;
+}
+.page-head,
+.page-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.page-head{
+  margin-bottom: 12px;
+}
+.page-foot{
+  margin-top: 12px;
+}
+.page-body {
+  flex: 1;
+  overflow: auto;
+}
+
+.ant-tag{
+  margin: 0;
+}
+.ant-page-header{
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+.flex{
+  display: flex;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
