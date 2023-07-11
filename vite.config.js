@@ -22,6 +22,12 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src')
     }
   },
+  build: {
+    outDir: 'dist',
+    assetsDir: '',
+    sourcemap: false,
+    minify: true,
+  },
   css: {
     preprocessorOptions: {
       less: {
