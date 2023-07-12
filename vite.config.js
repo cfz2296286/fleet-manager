@@ -8,7 +8,7 @@ export default defineConfig({
   base: './',
   server: {
     host: "0.0.0.0",
-    port: 8080,
+    port: 8000,
     proxy: {
       '^/server/.*': {
         target: 'http://54.151.125.63:8000/',
