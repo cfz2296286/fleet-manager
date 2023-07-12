@@ -7,7 +7,8 @@ export default defineConfig({
   plugins: [vue()],
   base: './',
   server: {
-    host: "0.0.0.0",
+    host: "0.0.0.0",    
+    port: 8080,
     proxy: {
       '^/server/.*': {
         target: 'http://54.151.125.63:8000/',
